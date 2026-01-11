@@ -3,7 +3,7 @@
 I am requiemDigital - RD for short - and I am a host of different things. To umbrella those things, I am an aspiring Full-Stack Web 
 Developer and Solo Game Developer who is certified in Cybersecurity and eager to break into the field - with permission of course.
 
-- 🔭 I’m currently working on a mobster game that will rival The Godfather
+- 🔭 I’m currently working on a mobster game that will rival Electronic Arts' The Godfather
   
 - 🌱 I’m currently learning C#, SQL, Python, and PHP
   
