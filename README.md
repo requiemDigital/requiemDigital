@@ -1,12 +1,11 @@
 ## Greetings 👋
-**
-<!--
-**requiemDigital/requiemDigital** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-**
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
+I am requiemDigital - RD for short - and I am a host of different things. To umbrella those things, I am an aspiring Full-Stack Web 
+Developer and Solo Game Developer who is certified in Cybersecurity and eager to break into the field - with permission of course.
+<!--
+
+- 🔭 I’m currently working on a Mobster Game that will rival The Godfather
+- 🌱 I’m currently learning SQL, PHP
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
 - 💬 Ask me about ...
