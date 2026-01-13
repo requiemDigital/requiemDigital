@@ -1,7 +1,47 @@
 body {
     margin: 0;
-    font-family: system-ui, sans-serif;
-    background: #111;
-    color: #eee;
     padding: 2rem;
+    font-family: 'Inter', sans-serif;
+    background: #1A1A1A;
+    color: #E8E6E3;
+}
+
+// Accents coloring logic follows //
+
+a {
+  color: #7F5AF0;
+}
+
+a:hover {
+  color: #2DE2E6;
+}
+
+// Hero section color logic follows//
+.hero {
+  padding: 8rem 2rem;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #1A1A1A 0%,
+    #22201E 100%
+  );
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: #E8E6E3;
+}
+
+.cta {
+  margin-top: 2rem;
+  padding: 0.8rem 1.6rem;
+  background: #7F5AF0;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.cta:hover {
+  background: #2DE2E6;
 }
