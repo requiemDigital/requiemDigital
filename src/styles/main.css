@@ -46,28 +46,28 @@ a:hover {
 
 .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
   padding: 1.2rem 2rem;
-  background: #1A1A1A; /* charcoal with warm undertone */
-  border-bottom: 1px solid #2A2725; /* rustic subtle border */
+  background: #1A1A1A;
+  border-bottom: 1px solid #2A2725;
 }
 
 .nav-logo {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #E8E6E3; /* warm off-white */
+  color: #E8E6E3;
   letter-spacing: 0.5px;
 }
 
 .nav-links {
   list-style: none;
-}
-
-.nav-links li {
-  display: inline-block;
-  margin-left: 2rem;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
@@ -77,15 +77,10 @@ a:hover {
   transition: color 0.25s ease;
 }
 
-/* Awareness ribbon accents */
 .nav-links a:hover {
-  color: #7F5AF0; /* purple */
+  color: #7F5AF0;
 }
 
 .nav-links a:active {
-  color: #2DE2E6; /* cyan */
-}
-
-.cta:hover {
-  background: #2DE2E6;
+  color: #2DE2E6;
 }
