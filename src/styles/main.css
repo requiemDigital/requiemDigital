@@ -62,7 +62,7 @@ a:hover {
   letter-spacing: 0.5px;
 }
 
-.nav-links li {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
