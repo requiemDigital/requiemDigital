@@ -6,7 +6,7 @@ body {
     color: #E8E6E3;
 }
 
-// Accents coloring logic follows //
+/* ACCENTS COLOR LOGIC FOLLOWS */
 
 a {
   color: #7F5AF0;
@@ -16,7 +16,7 @@ a:hover {
   color: #2DE2E6;
 }
 
-// Hero section color logic follows//
+/* HERO SECTION COLOR LOGIC FOLLOWS*/
 .hero {
   padding: 8rem 2rem;
   text-align: center;
@@ -40,6 +40,50 @@ a:hover {
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.2s ease;
+}
+
+/* NAVBAR CODING FOLOWS*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.2rem 2rem;
+  background: #1A1A1A; /* charcoal with warm undertone */
+  border-bottom: 1px solid #2A2725; /* rustic subtle border */
+}
+
+.nav-logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #E8E6E3; /* warm off-white */
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: #E8E6E3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+/* Awareness ribbon accents */
+.nav-links a:hover {
+  color: #7F5AF0; /* purple */
+}
+
+.nav-links a:active {
+  color: #2DE2E6; /* cyan */
 }
 
 .cta:hover {
