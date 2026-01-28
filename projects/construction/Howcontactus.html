@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+  <html lang="en-US">
+    <head>
+	  <link rel="stylesheet" href="css\Howltd.css"/>
+	  <link rel="stylesheet" href="css\Howcontact.css"/>
+	  <meta charset="UTF-8"/>
+	  <meta name="description" content="Requiem Construction ltd."/>
+	  <meta name="keywords" content="Requiem, Construction, LTD"/>
+	  <meta name ="author" content="Doc Requiem"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <title>Contact - Requiem Construction Ltd.</title>
+	</head>
+	
+	<body>
+	  <header>
+	    <div id="sonar"></div>
+	    <div class="headContainer">
+	      <h1 class="businessName">Requiem Construction Ltd.</h1>
+		  <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+	  
+		  <nav>
+		    <ul class="navMenu">
+		      <li><a href="Howltd.html">Home</a></li>
+		      <li><a href="Howaboutus.html">About Us</a></li>
+		      <li><a href="Howservices.html">Services</a></li>
+		      <li><a href="Howcontactus.html">Contact Us</a></li>
+		    </ul>
+		  </nav>
+	    </div>
+	  </header>
+	  <main>
+	    <section class="pageHeader">
+		  <h2>Contact Us</h2>
+		</section>
+		
+		<article class="contactInfo">
+		  <section class="contactL">
+		    <div>
+			  <h2>Our Office</h2>
+			  <p>Requiem Construction Ltd.</p>
+			  <p>123 Requiem Academy Lane</p>
+			  </p>South-East-West-North UK City</p>
+			  <p>LA9 9RA, UK - Earth</p>
+			</div>
+			<div>  
+			  <h2>Phone</h2>
+			  <p>General Inquiries: (01234) 567-890</p>
+			  <p>Project Consultations:(01234) 567-891</p>
+			</div>
+			<div>
+			  <h2>Email</h2>
+			  <p><a href="mailto">info@requiemconstruction.co.uk</a></p>
+			  <p><a href="mailto">projects@requiemconstruction.co.uk</a></p>
+			</div>
+		  </section>
+		  
+		  <section class="contactR">
+		    <h2>Request Consultation</h2>
+			
+			<form action="/contact-submit" method="POST" class="contactForm">
+			  <input
+			  type="text"
+              name="name"
+              placeholder="Full Name*"
+              required/>
+              <input
+              type="email" name="email" placeholder="Email Address*" required</>
+             <input
+               type="tel" name="phone" placeholder="Phone Number"/>
+             <select name="service" required>
+               <option value="" disabled selected>Service Interested In*</option>
+               <option value="renovations">Renovations & Extensions</option>
+               <option value="loft">Loft Conversions</option>
+               <option value="full">Full Conversions</option>
+             </select>
+             <textarea
+               name="message"
+               rows="5"
+               placeholder="Project Details*"
+               required
+             ></textarea>
+             <button type="submit" class="ctaBtn ctaY">Submit</button>
+            </form>
+
+		  </section>
+		</article>
+	  </main>
+	  <footer>
+	    <div class="footerContainer">
+		    <div class="footerColumn company">
+		      <h3>Requiem Construction Ltd.</h3>
+			  <p><em>Building a better future, one project at a time</em></p>
+		    </div>
+		  <div class="footerColumn links">
+		    <h3>Quick Links</h3>
+			<ul>
+			  <li><a href="#">About Us</a></li>
+			  <li><a href="#">Services</a></li>
+			  <li><a href="#">Projects</a></li>
+			  <li><a href="#">Contact Us</a></li>
+			</ul>
+		  </div>
+		    <div class="footerColumn contact">
+		      <h3>Contact Us</h3>
+			  <p>Email: requiemdigital.proton.me</p>
+			  <p>Phone: (123) 456-7890</p>
+			</div>
+			<div class="footerColumn copyright">
+			  <p>&copy; 2025 Requiem Construction Ltd. All rights reserved.</p>
+			</div>
+		</div>
+	  </footer>
+	  <script src="js\Howltd.js"></script>
+	</body>
+  </html>

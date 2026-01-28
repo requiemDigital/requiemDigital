@@ -1,0 +1,94 @@
+.contactInfo {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px;
+	text-align: center;
+}
+
+li {
+	list-style: none;
+}	
+.contactL {
+	border-right: 5px solid var(--accent-gold);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.contactL a {
+	color: var(--text-light);
+}
+
+.contactL p {
+	line-height: 2rem;
+}
+
+.contactR {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+}
+
+/* Narrowed, vertical form stack */
+.contactForm {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Inputs, select, textarea styling */
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: var(--bg-card);
+  color: var(--text-light);
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Placeholder color */
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: var(--text-muted);
+}
+
+/* Focus state */
+.contactForm input:focus,
+.contactForm select:focus,
+.contactForm textarea:focus {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px var(--accent-gold-20);
+  outline: none;
+}
+
+/* Submit button centered */
+.contactForm .ctaBtn {
+  align-self: center;
+  padding: 0.85rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contactForm {
+    max-width: 100%;
+  }
+}

@@ -1,39 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Requiem Digital</title>
-    <link rel="stylesheet" href="src/styles/main.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-logo">Requiem Digital</div>
+    <title>Christopher Roberts – Portfolio</title>
 
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <!-- Core Styles (always loaded) -->
+    <link rel="stylesheet" href="src\styles\main.css">
+
+  </head>
+
+  <body class="theme-retro">
+    <header class="site-header" id="mainHeader">
+      <div class="inner-header">
+
+        <div class="logo-group">
+          <img class="logoP" src="E:\Business\0. Requiem Digital\New Logo Design\A_sleek_and_modern_logo_for_Re.jpeg" alt="Requiem Digital logo">
+          <a href="#hero" class="logo">
+            <span class="logo-full">Requiem Digital</span>
+          </a>
+        </div>
+
+        <nav class="navbar">
+          <ul class="navlinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
-        <h1>Requiem Digital</h1>
-        <p>Developer • Educator • Systems Thinker</p>
+
+      </div>
+    </header>
+  
+    <header class="side-header" id="sideHeader">
+      <a href="#hero" class="side-logo"><img src="E:\Business\0. Requiem Digital\New Logo Design\A_sleek_and_modern_logo_for_Re.jpeg"></a>
+
+      <nav class="side-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Requiem Digital</h1>
-            <p>Systems built with intention, privacy, and resilience.</p>
-            <a href="/projects.html" class="cta">Explore Projects</a>
-        </section>
-        <section>
-            <h2>Welcome</h2>
-            <p>This site is under construction. More coming soon.</p>
-        </section>
-    </main>
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">Web Developer & Systems Designer</h1>
+        <p class="hero-subtitle">Building modular, future-proof experiences</p>
+        <div class="hero-accent"></div>
 
-    <script src="src/scripts/main.js"></script>
-</body>
+        <div class="hero-cta">
+          <a href="#projects" class="hero-btn">View My Work</a>
+          <a href="#contact" class="hero-btn">Free Consultation</a>
+        </div>
+      </div>
+    </section>
+  
+    <main class="source">
+  
+      <section id="about">
+        <h2 class="section-title">About</h2>
+        <div class="hero-accent"></div>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <h3>Veteran‑Driven Precision</h3>
+            <p>I’m Chris — founder of Requiem Digital, U.S. Army veteran, cybersecurity specialist, and systems‑driven developer. I’ve taken the discipline and precision forged in military service and redirected it into building secure, scalable, and future‑proof digital experiences.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>Cybersecurity Expertise</h3>
+            <p>My work sits at the intersection of cybersecurity, front‑end engineering, and digital strategy. I’m CompTIA‑certified and committed to helping individuals and businesses strengthen their online presence.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>Developer & Educator</h3>
+            <p>I teach front‑end development, mentor aspiring cybersecurity professionals, and share practical insights for creators and startups.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>Game Development</h3>
+            <p>I’m developing a strategic, systems‑driven mobster simulation focused on power, tension, and atmospheric storytelling.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>My Mission</h3>
+            <p>Whether you need secure web solutions, strategic guidance, or a partner who understands both the creative and technical sides of digital growth, I’m here to help you move with confidence.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>Free Consultations</h3>
+            <p>I offer complimentary social media audits and consultations — no pressure, no obligation, just value.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects reveal">
+        <h2>Projects</h2>
+        <div class="hero-accent"></div>
+
+        <div class="project-carousel" aria-label="Project Carousel">
+          <div class="project-slides">
+
+            <!-- Requiem Photography -->
+            <div class="project-slide" data-anim="scale">
+              <div class="project-card">
+
+                <div class="project-thumb">
+                  <img src="src/assets/projImgs/reqWed.jpg" alt="Requiem Photography">
+                </div>
+
+                <div class="project-content">
+                  <h3 class="project-title">Requiem Photography</h3>
+                  <p class="project-desc">A clean, modern portfolio concept built for a freelance photographer.Designed locally in Notepad++, focusing on visual hierarchy, simplicity, and showcasing work without distraction.</p>
+
+                  <div class="tech-stack">
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">Notepad++</span>
+                  </div>
+                </div>
+
+                    <div class="project-overlay">
+                      <a href="projects\photography\index.html" class="btn proj-btn--mini" target="blank" class="btn proj-btn--mini">View Live</a>
+                      <a href="https://github.com/requiemDigital/requiemDigital/tree/main/projects/photography/index.html" class="btn proj-btn--mini">View Code</a>
+                      <a href="#" class="btn proj-btn--mini" data-case="photography">Case Study</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Requiem Construction -->
+            <div class="project-slide" data-anim="rotate">
+              <div class="project-card">
+
+                <div class="project-thumb">
+                  <img src="src/assets/projImgs/howConstruct.jpg" alt="Requiem Construction">
+                </div>
+
+                <div class="project-content">
+                  <h3 class="project-title">Requiem Construction</h3>
+                  <p class="project-desc">A conceptual redesign inspired by howardsconstruction.co.uk. This project focused on fixing poor navigation, improving user flow, and creating a more trustworthy, client‑friendly experience for a landlord‑consulting construction company.</p>
+
+                    <div class="tech-stack">
+                      <span class="tech">HTML</span>
+                      <span class="tech">CSS</span>
+                      <span class="tech">JavaScript</span>
+                      <span class="tech">Notepad++</span>
+                    </div>
+                </div>
+
+                    <div class="project-overlay">
+                      <a href="projects\construction\Howltd.html" target="blank" class="btn proj-btn--mini" class="btn proj-btn--mini">View Live</a>
+                      <a href="https://github.com/requiemDigital/requiemDigital/tree/main/projects/construction/Howltd.html" class="btn proj-btn--mini">View Code</a>
+                      <a href="#" class="btn proj-btn--mini" data-case="construction">Case Study</a>
+                    </div>
+
+              </div>
+            </div>
+
+            <!-- Hereauxs Hall -->
+            <div class="project-slide" data-anim="fade">
+              <div class="project-card">
+
+                <div class="project-thumb">
+                  <img src="src/assets/projImgs/zhaoYun.jpeg" alt="Hereauxs Hall">
+                </div>
+
+                <div class="project-content">
+                  <h3 class="project-title">Hereauxs Hall</h3>
+                  <p class="project-desc"> My very first website — a lore hub dedicated to Dynasty Warriors series' Lu Bu, Zhao Yun, and the valiant Dart Feld from The Legend of Dragoon. A rough early project, but the one that sparked my journey into web development and world‑building.</p>
+
+                    <div class="tech-stack">
+                      <span class="tech">HTML</span>
+                      <span class="tech">CSS</span>
+                      <span class="tech">JavaScript</span>
+                      <span class="tech">Notepad++</span>
+                    </div>
+                </div>
+
+                <div class="project-overlay">
+                  <a href="projects\hereaux\index.html" target="blank" class="btn proj-btn--mini">View Live</a>
+                  <a href="https://github.com/requiemDigital/requiemDigital/tree/main/projects/hereaux/index.html" class="btn proj-btn--mini">View Code</a>
+                  <a href="#" class="btn proj-btn--mini data-case="hereaux">Case Study</a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        <!-- Navigation -->
+        <button class="proj-nav prev" aria-label="Previous Project">&laquo;</button>
+        <button class="proj-nav next" aria-label="Next Project">&raquo;</button>
+      </div>
+
+    </section>
+	  
+	  <div class="projBtn">
+        <a href="#packages" class="proj-btn">View Packages</a>
+        <a href="#contact" class="proj-btn">Book Free Consultation</a>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills src reveal">
+      <h2>Skills</h2>
+      <div class="hero-accent"></div>
+
+      <div class="skills-container">
+
+        <!-- Category 1 -->
+        <div class="skill-card">
+          <h3>Web Development Services</h3>
+          <ul>
+            <li data-details="Focus on crafting mobile-first, visually appealing interfaces with intuitive layouts ensuring a seamless experience across devices.">
+          Responsive UI/UX Design
+            </li>
+            <li data-details="Creating PWAs that deliver app-like experiences, including offline capabilities, background sync, and push notifications.">
+          Progressive Web App Development
+            </li>
+            <li data-details="Ensuring compliance with WCAG guidelines and compatibility across multiple browsers, devices, and operating systems.">
+            Accessibility & Cross-Browser Compatibility
+            </li>
+            <li data-details="Employing tools and practices—Jest, Cypress, or Selenium—to write unit and integration tests that guarantee a robust and error-free interface.">
+          Front-End Testing & Debugging
+            </li>
+            <li data-details="Optimizing front-end code for speed through techniques such as lazy loading, code-splitting, efficient asset management, and minification.">
+          Performance Optimization
+            </li>
+            <li data-details="Implementing high-performing SPAs using frameworks like React, Angular, or Vue.js for smooth navigation and fast response times.">
+          Single-Page Application Development
+            </li>
+            <li data-details="Utilizing libraries like D3.js or Chart.js to present data in engaging formats such as graphs, charts, and interactive dashboards.">
+          Interactive Data Visualization
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-card">
+          <h3>Digital Security Solutions</h3>
+          <ul>
+            <li data-details="Security Risk Assessments, Vulnerability Scanning, and Threat Modeling">
+          Risk Management & Vulnerability Assessment
+            </li>
+            <li data-details="Firewall and Perimeter Protection, IDS/IPS, and Secure Network Architecture Design">
+          Network & Infrastructure Security
+            </li>
+            <li data-details="Endpoint Protection Platforms, MDM, and System Hardening">
+          Endpoint & Device Security
+            </li>
+            <li data-details="Policy Development, Compliance Audits, and Security Training">
+          Security Policy & Governance
+            </li>
+            <li data-details="Incident Response Planning, Forensics, and Disaster Recovery">
+          Incident Response & Continuity
+            </li>
+            <li data-details="SIEM, Threat Intelligence, and Penetration Testing Support">
+          Security Monitoring & Intelligence
+            </li>
+            <li data-details="MFA, Access Control, and Single Sign-On Configuration">
+          Identity & Access Management
+            </li>
+          </ul>
+        </div>
+
+          <!-- Category 3 -->
+          <div class="skill-card">
+            <h3>Marketing & Outreach</h3>
+            <ul>
+              <li data-details="Craft comprehensive strategies tailored to brand identity, audience, and goals.">Social Media Strategy Development</li>
+              <li data-details="Develop engaging graphics, videos, and posts to maintain an active brand voice.">
+          Content Creation & Curation
+              </li>
+              <li data-details="Interact with followers, moderate discussions, and foster community engagement.">
+          Community Management
+              </li>
+              <li data-details="Design and optimize targeted advertising campaigns across major platforms.">
+          Paid Advertising Campaigns
+              </li>
+              <li data-details="Collaborate with influencers and brands to expand reach and credibility.">
+          Influencer Outreach
+              </li>
+              <li data-details="Track KPIs and analyze audience behavior to refine strategies.">
+          Analytics & Reporting
+              </li>
+              <li data-details="Monitor brand mentions and trends to manage reputation proactively.">
+          Social Listening & Reputation Management
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+	
+    </main>
+  
+  <section id="contact" class="section contact reveal">
+    <h2>Contact</h2>
+    <div class="hero-accent"></div>
+
+    <form name="contact" netlify netlify-honeypot="bot-field" class="contact-form" id="contactForm" novalidate>
+
+      <input type="hidden" name="form-name" value="contact">
+
+      <div class="honeypot">
+        <label for="bot-field">Leave this field empty</label>
+        <input type="text" id="bot-field" name="bot-field">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+        <small class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+        <small class="error-message"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required minlength="10" maxlength="1000"></textarea>
+        <small class="error-message"></small>
+      </div>
+
+      <button type="submit" class="btn-primary">Send</button>
+
+      <p class="success-message" id="successMessage">Message sent successfully.</p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="credentials">
+    © 2025 Christopher Roberts
+	</div>
+  </footer>
+  <!-- Case Study Panel -->
+<div id="caseStudyBackdrop"></div>
+
+<div id="caseStudyPanel">
+    <button id="caseStudyClose">×</button>
+    <div id="caseStudyContent"></div>
+</div>
+  
+    <script>
+     //PROJECT SECTION LOGIC //
+   
+      document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll(".project-slide");
+      const slideWrapper = document.querySelector(".project-slides");
+      const prevBtn = document.querySelector(".proj-nav.prev");
+      const nextBtn = document.querySelector(".proj-nav.next");
+
+      let index = 0;
+      let interval;
+
+      function updateSlidePosition() {
+        const offset = -index * 100;
+        slideWrapper.style.transform = `translateX(${offset}%)`;
+      }
+
+      function nextSlide() {
+        index = (index + 1) % slides.length;
+        updateSlidePosition();
+      }
+
+      function prevSlide() {
+        index = (index - 1 + slides.length) % slides.length;
+        updateSlidePosition();
+      }
+  
+      function startAuto() {
+        interval = setInterval(nextSlide, 5000);
+      }
+
+      function stopAuto() {
+        clearInterval(interval);
+      }
+
+      nextBtn.addEventListener("click", () => {
+        stopAuto();
+        nextSlide();
+        startAuto();
+      });
+  
+      const slideArea = document.querySelector('.project-slides');
+  
+      slideArea.addEventListener('mouseenter', () => {
+        stopAuto();
+	    });
+   
+      slideArea.addEventListener('mouseexit', () => {
+        startAuto();
+	    });
+  
+  
+      prevBtn.addEventListener("click", () => {
+        stopAuto();
+        prevSlide();
+        startAuto();
+      });
+
+      // Initialize
+        updateSlidePosition();
+        startAuto();
+      });
+
+    // SKILL SECTION LOGIC FOLLOWS
+	
+    
+      document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".skill-card li").forEach(item => {
+        item.addEventListener("click", () => {
+          // If already expanded, collapse it
+          if (item.classList.contains("expanded")) {
+            item.classList.remove("expanded");
+            item.querySelector(".skill-details")?.remove();
+            return;
+          }
+
+          // Collapse any other expanded items in the same card
+          const parent = item.closest(".skill-card");
+          parent.querySelectorAll("li.expanded").forEach(openItem => {
+            openItem.classList.remove("expanded");
+            openItem.querySelector(".skill-details")?.remove();
+          });
+
+          // Expand this item
+          item.classList.add("expanded");
+
+          const details = document.createElement("div");
+          details.classList.add("skill-details", "show");
+          details.textContent = item.dataset.details;
+
+          item.appendChild(details);
+        });
+      });
+      });
+  
+      /*FORM LOGIC FOLLOWS */
+  
+      document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contactForm");
+      const successMessage = document.getElementById("successMessage");
+
+      // Track how long the user has been on the form
+      const formLoadTime = Date.now();
+
+      const validators = {
+        name: value => value.length >= 2 && value.length <= 50,
+        email: value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
+        message: value => value.length >= 10 && value.length <= 1000
+      };
+
+      function sanitize(input) {
+        return input.replace(/[<>]/g, ""); // basic XSS protection
+      }
+
+      form.addEventListener("submit", e => {
+        e.preventDefault();
+
+        // Honeypot check
+        if (form["bot-field"].value !== "") {
+          console.warn("Bot detected — submission blocked.");
+          return;
+        }
+
+        // Time-based spam protection (must spend at least 2 seconds)
+        if (Date.now() - formLoadTime < 2000) {
+          alert("Please take a moment to fill out the form.");
+          return;
+        }
+
+        let valid = true;
+
+        form.querySelectorAll(".form-group").forEach(group => {
+          const input = group.querySelector("input, textarea");
+          const error = group.querySelector(".error-message");
+
+          const value = sanitize(input.value.trim());
+          input.value = value;
+
+          const check = validators[input.name];
+
+          if (!check(value)) {
+            valid = false;
+            error.textContent = "Please enter a valid " + input.name + ".";
+            input.classList.add("invalid");
+          } else {
+            error.textContent = "";
+            input.classList.remove("invalid");
+          }
+        });
+
+        if (valid) {
+          // No backend — just show success
+          successMessage.classList.add("show");
+
+          // Reset form
+          form.reset();
+
+          // Hide success message after 4 seconds
+          setTimeout(() => {
+            successMessage.classList.remove("show");
+          }, 4000);
+        }
+      });
+      });
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        });
+      });
+	  document.addEventListener("DOMContentLoaded", () => {
+        const reveals = document.querySelectorAll(".reveal");
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // animate once
+            }
+          });
+        }, {
+        threshold: 0.2
+        });
+
+        reveals.forEach(section => observer.observe(section));
+      });
+	
+	  //SIDE-NAVIGATION BAR LOGIC
+  
+      document.addEventListener("DOMContentLoaded", () => {
+        const hero = document.querySelector("#hero");
+        const header = document.querySelector("#mainHeader");   // horizontal header
+        const sidebar = document.querySelector("#sideHeader");  // sidebar header
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              // Hero visible → fade sidebar out, fade header in
+              sidebar.classList.remove("active");
+              header.classList.remove("fading-out");
+              document.body.classList.remove("sidebar-active");
+            } else {
+              // Hero not visible → fade header out, fade sidebar in
+              sidebar.classList.add("active");
+              header.classList.add("fading-out");
+              document.body.classList.add("sidebar-active");
+            }
+          });
+        }, { threshold: 0.4 });
+
+        observer.observe(hero);
+      });
+	
+	  // Case Study Panel Logic
+      const caseStudyPanel = document.getElementById("caseStudyPanel");
+      const caseStudyBackdrop = document.getElementById("caseStudyBackdrop");
+      const caseStudyContent = document.getElementById("caseStudyContent");
+      const caseStudyClose = document.getElementById("caseStudyClose");
+
+      // Open panel with content
+      function openCaseStudy(contentHTML) {
+        caseStudyContent.innerHTML = contentHTML;
+        caseStudyBackdrop.classList.add("active");
+        caseStudyPanel.classList.add("active");
+        document.body.style.overflow = "hidden"; // prevent background scroll
+      }
+
+      // Close panel
+      function closeCaseStudy() {
+        caseStudyBackdrop.classList.remove("active");
+        caseStudyPanel.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      caseStudyClose.addEventListener("click", closeCaseStudy);
+      caseStudyBackdrop.addEventListener("click", closeCaseStudy);
+
+      // Attach to buttons
+      document.querySelectorAll("[data-case]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const content = btn.getAttribute("data-case");
+          openCaseStudy(content);
+        });
+      });
+    </script>
+  
+  </body>
 </html>

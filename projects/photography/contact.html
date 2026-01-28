@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+  <html lang="eng-US">
+    <header>
+      <head>
+        <link rel="stylesheet" href="wedding.css">
+        <link rel="stylesheet" href="weddcontact.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Wedding Photography">
+        <meta name="keywords" content="Fallen, Flix, fallen flix, Fallen Flix">
+        <meta name="author" content="Fallen Requiem"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fallen Flix</title>
+      </head>
+    </header>
+
+    <body class="heart">
+      <div>
+	    <img class="logo" src="C:\Users\19738\Desktop\1. All Coding\2. The Wedding Project\Logo.png" width="75px" height="75px">
+	  </div>
+      <div>
+        <h1 class="top">Fallen Photography</h1>
+      </div>
+      <div class="admin">
+        <ul>
+          <li class="nav"><a class="active" id="contact" href="contact.html">Contact</a></li>
+          <li class="nav"><a id="packages" href="packages.html">Packages</a></li>
+          <li class="nav"><a id="portfolio" href="portfolio.html">Portfolio</a></li>
+          <li class="nav"><a id="about" href="about.html">About</a></li>
+          <li class="nav"><a href="index.html">Home</a><li>
+       </div>
+      <hr style="clear:both;">
+	  
+	  <form id="myForm">
+	    <div class="formcontent">
+	      <h1>Contact Us</h1>
+	      <label for="fname">First Name</label>
+		  <input type="text" id="fname" name="firstname" placeholder="First name" required>
+					  
+	      <label for="lname">Last Name</label>
+		  <input type="text" id="lname" name="lastname" placeholder="Last name" required>
+		
+		  <label for="country">Country</label>
+		  <select id="country" name="country" required>
+		    <option value="select-one">(select one)</option>
+		    <option value="australia">Australia</option>
+		    <option value="canada">Canada</option>
+		    <option value="usa">United States of America</option>
+		    <option value="uk">United Kingdom</option>
+		    <option value="germany">Germany</option>
+		  </select>
+		
+		  <label for="subject">Subject</label>
+		  <textarea id="subject" name="subject" placeholder="Write here..." style="height:200px;" required></textarea>
+		  <input type="submit" value="Submit">
+	    </div>	   
+	  </form>
+	  
+	  <form>
+        <div class="newscontent">
+	      <h1>Subscribe to Our Newsletter</h1>
+	    </div>
+		  
+		<div class="newscontent">
+		  <input type="text" placeholder="Name" name="name" required>
+		  <input type="text" placeholder="Email Address" name="email" required>
+					  
+	      <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+          </label>
+		</div>
+		
+	    <div class="newscontent">
+   	      <input type="submit" value="Subscribe">
+		</div>
+	  </form>
+	  
+	  <script>
+        document.getElementById('myForm').addEventListener('submit', function() {
+        if (!this.checkValidity()) {
+        event.preventDefault();
+        alert('Please fill out all required fields.');
+        }
+      });
+       </script>
+      <footer id="endpointc" style="clear:both">
+        <p>&copy; 2025. All rights reserved</p>
+      </footer>
+    </body>
+  </html>

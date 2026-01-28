@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+  
+  
+.logo {
+	float: right;
+	box-shadow: 2px 2px 5px black;
+  }
+  
+.top {
+	padding: 17px;
+	text-shadow: 0px 0px 10px gray;
+  }  
+  
+  /*admin data above - copy across all pages. */
+  
+.portfolio {
+	text-align: center;
+}
+
+.img-container {
+	  margin: auto;
+	  padding: 15px;
+	  display: inline;
+}
+
+.img-container img {
+	width: 20%;
+	margin: 15px;
+	border: 2px outset white;
+	border-radius: 20%;
+}
+
+.img-container img:hover {
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}

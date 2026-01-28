@@ -1,0 +1,611 @@
+   :root {
+  /* Dark mode defaults */
+  --bg-primary:   #111;    /* page background */
+  --bg-secondary: #1a1a1a; /* section backgrounds */
+  --bg-card:      #0f0f0f; /* cards, overlays */
+  
+  /* Text */
+  --text-light:      #f4f4f4;
+  
+  /* Accent */
+  --accent-gold:     #FFD700;
+  --accent-gold-20:  rgba(255,215,0,0.3);
+}
+
+  
+
+* {
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+ body {
+	 cursor: default; /* Restore default cursor */
+ }
+
+#sonar {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 204, 0, 0.3);
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+  animation: sonar-ping 1s infinite;
+  pointer-events: none;
+  display: none;
+  z-index: 9999;
+}
+
+@keyframes sonar-ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+ 
+ 
+/* Fixed Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f8f8f8;
+      z-index: 10;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+
+/* Headings & paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-light);
+}
+
+
+#theme-toggle {
+	background: none;
+	border: 2px solid var(--text-light);
+	color: var(--text-light);
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+	background: bar(--text-light);
+	color: var(--bg-primary);
+}
+
+.navMenu a {
+  color: var(--text-light);
+  transition: color .3s;
+}
+.navMenu a:hover,
+.navMenu a:focus {
+  color: var(--accent-gold);
+  border-bottom-color: var(--accent-gold);
+}
+.menu-toggle span {
+  background: var(--text-light);
+}
+
+/* Container for Business Name and Nav */
+    .headContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Business Name Styling */
+    .businessName {
+      font-size: 1.8rem;
+    }
+
+    /* Navigation Styling */
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .navMenu {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .navMenu li {
+      display: inline-block;
+    }
+
+    .navMenu a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #444;
+      transition: color 0.3s ease;
+    }
+
+    .navMenu a:hover,
+    .navMenu a:focus {
+      font-weight: bold;
+      border-bottom: 2px solid grey;
+    }
+
+    /* Mobile Menu Toggle Button */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 5px;
+      background: none;
+      border: none;
+    }
+
+    .menu-toggle span {
+      height: 3px;
+      width: 25px;
+      background: #444;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      .headContainer {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .businessName {
+        margin-bottom: 10px;
+      }
+
+      /* Collapse the navigation menu */
+      .navMenu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: #007BFF;
+        padding: 10px;
+      }
+
+      .navMenu.active {
+        display: flex;
+      }
+
+      .navMenu a {
+        color: #fff;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    /* Add top margin to content to prevent overlap */
+    main {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+.pageHeader {
+	text-align: center;
+	padding: 2rem 1rem;
+	margin: 10px 20px;
+}
+
+.pageHeader h2 {
+	color: #FFD700; /* Bold yellow header */
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.pageHeader p {
+  color: #ccc;
+  font-style: italic;
+}
+
+header {
+     background-color: var(--bg-secondary);
+	 position: fixed;
+	 top: 0; left: 0; width: 100%;
+	 z-index: 1000;
+}
+
+/* To prevent content from being hidden behind the fixed nav */
+/* Apply black page background + light text */
+
+body {
+    padding-top: 20px; /* Adjust based on the navbar height */
+	background-color: var(--bg-primary);
+	color: var(--text-light);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.hero {
+	position: relative;
+  background: url('Images/construction-site.jpg') center/cover no-repeat;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 50px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
+
+.heroText {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.heroText {
+	max-width: 600px;
+}
+
+.heroText h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.heroText {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 12px 24px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.6rem;
+	border-radius: 5px;
+}
+
+.ctaBtn {
+	display: inline-block;
+	padding: 14px 28px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 6px;
+}
+
+.ctaY {
+	background-color: #ffcc00;
+	color: white;
+	border: 2px solid black;
+	transition: background-color 0.3s ease;
+}
+
+.ctaY:hover {
+	background-color: #e6b800;
+}
+
+/*Moving into Services */
+
+
+/* Service Section Container */
+.serveSec {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	background-color: var(--bg-secondary);
+	padding: 40px;
+	margin: 20px 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.serveSecT {
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--accent-gold);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Services Preview Container */
+
+.services-preview {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+	text-align: center;
+}
+
+/* Service Card Formatting and styling */
+
+.service-card {
+    flex: 1;
+    width: 40%;
+    max-width: 450px;
+    min-height: 350px;
+    border-radius: 10px;
+    background-color: var(--bg-card);
+	color: var(--text-light);
+	border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* service-card animations */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px var(--accent-gold-20);
+}
+
+
+/*service-card anchor elements */
+
+.service-card a {
+	display: block;
+	transition: transform 0.3s ease-in-out;
+}
+
+.service-card a:hover {
+	color: white;
+	transition: 0.3 ease-in-out;
+}
+
+/* service-card Video Elements */
+.service-video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    opacity: 0.8;
+    filter: brightness(0.7);
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Video Brightens on Hover */
+.service-card:hover .service-video {
+    filter: brightness(1);
+    opacity: 1;
+}
+
+
+/* Service Content formatting/stylings */
+.service-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Yellow Accents for anchors */
+.service-content a{
+    font-size: 1.4rem;
+    color: var(--accent-gold);
+}
+
+/* Text Adjustments */
+.service-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.learnM {
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	font-weight: bold;
+	overflow: hidden;
+	transition: background 0.3s ease;
+}
+
+/*About Us and Why Choose Us follows */
+
+.abtus {
+	display: flex;
+	flex: 1;
+	justify-content: space-evenly;
+	gap: 20px;
+	padding: 20px 10px;
+	align-items: center;
+	text-align: center;
+}
+
+.abtus h2 {
+	font-size: 1.5rem; /* Bold without overpowering */
+    font-weight: 700;  /* Strong emphasis */
+    text-transform: uppercase; /* Adds authority */
+    letter-spacing: 1px; /* Subtle refinement */
+}
+
+.abtus p {
+    font-size: 1rem; /* Clean, readable */
+    font-weight: 500; /* Slightly stronger presence */
+    line-height: 2; /* Improves readability */
+}
+
+.inset-side {     
+    background: linear-gradient(to bottom, #2A2A2A, #3A3A3A); /* Enhanced charcoal gradient */
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.6); /* Deeper inner shadow */
+    color: #FAFAFA; /* Lightened text for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.outset-side {   
+    background: linear-gradient(to right, #DAA520, #F5C542); /* Brighter gold gradient */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); /* Slightly deeper raised effect */
+    color: #111111; /* Strong contrast */
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.outset-side h2, .outset-side p {
+    text-shadow: 0px 0px 6px rgba(245, 197, 66, 0.5); /* Subtle glow on gold text */
+}
+
+.inset-side:hover, .outset-side:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6); /* Enhanced hover glow */
+    transform: scale(1.03); /* Slight zoom-in */
+
+}
+
+/*Testimonials and Projects Follow */
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 80%;
+    margin: 40px auto; /* Centers with padding */
+}
+
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    min-width: 100%;
+    text-align: center;
+    border-radius: 12px; /* Softened edges */
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle depth */
+    opacity: 0; /* For fade transition */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+}
+.testimonial.active {
+    opacity: 1; /* Ensures the current testimonial is fully visible */
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.next { right: 0; }
+.prev { left: 0; }
+
+/* Apply fade effect */
+.testimonial {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade */
+}
+
+/* Active slide appears */
+.testimonial:first-child {
+    opacity: 1; /* Ensure first slide is visible */
+}
+
+footer {
+	background-color: #000; /* Dark theme */
+	color: var(--text-light);
+}
+
+.footerContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+	  "company links contact"
+	  "copyright copyright copyright";
+	max-width: 1600px;
+	margin: auto;
+	gap: 20px;
+	text-align: center;
+}
+
+.footerColumn h3 {
+	margin-bottom: 10px;
+	color: var(--accent-gold);
+}
+
+.footerColumn ul {
+	list-style: none;
+	padding: 0;
+}
+
+.footerColumn ul li {
+	margin: 5px 0;
+}
+
+.footerColumn ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.company {
+    grid-area: company;
+}
+
+.links {
+    grid-area: links;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.copyright {
+    grid-area: copyright;
+    background-color: #222; /* Darker background for emphasis */
+    padding: 10px;
+    text-align: center;
+}
+
+.footerColumn a:hover {
+	text-decoration: underline;
+}
+	
+/* Responsiveness Adjustments */
+
+@media (max-width: 768px) {
+    .services-preview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+    }
+	.abtus {
+        flex-direction: column;
+        align-items: flex-start; /* Adjust alignment for readability */
+        padding: 20px; /* Ensure comfortable spacing */
+    }
+	.footer-container {
+        grid-template-columns: 1fr; /* Stacks items in one column */
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,114 @@
+* {
+	font-family: "Lucidia Console", "Courier New", monospace;
+	font-size: 100%;
+	background-color: black;
+	color: lime;
+}
+
+.admin {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 500px;
+}
+nav a {
+	text-decoration: none;
+}
+li {
+	display: inline;
+	border-right: 2px groove lime;
+	border-left: 2px groove lime;
+	padding: 3px;
+}
+
+li {
+	text-align: center;
+}
+li a:hover {
+	background-color: gray;
+	color: white;
+	text-decoration: underline;
+}
+
+h1 {
+	text-align: center;
+	border: 5px groove;
+	padding: 20px;
+	margin: 30px 0 30px 0;
+}
+/*Above is admin data for the source code and other stylings */
+
+#dart {
+	margin: 20px;
+}
+
+.dragoon {
+	text-indent: 50px;
+	border-left: 2px groove red; 
+	margin: 20px;
+	padding: 20px;
+	color: red;
+}
+#legend {
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: 2px underline red;
+	text-underline-position: under;
+	color: red;
+}
+
+#legend2 {
+	border-left: 2px groove red; 
+	margin: 20px;
+	padding: 20px;
+	color: red;
+}
+
+/* Above is code for Dart Feld starting from Image to Title to Content. */
+
+#zhao, #dw, #dw2 {
+	clear: right;
+}
+
+.shu {
+	text-indent: 50px;
+	border-right: 2px groove green; 
+	margin: 20px;
+	padding: 20px;
+}
+
+#dw {
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: 2px underline cyan;
+	text-underline-position: under;
+	margin: 60px;
+}
+
+/*Above is code for Zhao Yun starting from Image to Title to Content. */
+
+#dwmain, #lu, #dw3 {
+	clear: left;
+}
+
+#dwmain {
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: 2px underline gold;
+	text-underline-position: under;
+	margin: 60px;
+	color: violet;
+}
+
+.dynasty {
+	border-left: 2px groove violet; 
+	color:violet;
+	text-indent: 50px; 
+	margin: 20px;
+	padding: 20px;
+}
+
+#dw3 {
+	color: violet;
+}
+/*Above is code for Lu Bu starting from Image to Title to Content. */
